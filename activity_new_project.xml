@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_project"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.c3ntry.sentientcloud.NewProjectActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <include layout="@layout/toolbar_2"
+        android:id="@+id/toolbar"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="103dp"
+        android:layout_marginStart="103dp"
+        app:srcCompat="@drawable/ic_folder_open_black_24dp" />
+
+    <EditText
+        android:id="@+id/projectname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Project Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Start-Date"
+        android:inputType="date"
+        android:onClick="onClick" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:hint="End-Date"
+        android:id="@+id/end"
+        />
+
+    <EditText
+        android:id="@+id/assignedmanager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Project Manager"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/descr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.10"
+        android:ems="10"
+        android:hint="Brief Description"
+        android:inputType="textMultiLine" />
+
+
+    <Spinner
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:layout_weight="0.50" />
+
+
+</LinearLayout>
